@@ -9,6 +9,7 @@
 
     <properties>
         <spring.version>4.1.1.RELEASE</spring.version>
+        <spring.data.version>4.0.0.RELEASE</spring.data.version>
     </properties>
 
     <dependencies>
@@ -46,7 +47,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-neo4j</artifactId>
-            <version>4.0.0.RELEASE</version>
+            <version>${spring.data.version}</version>
         </dependency>
 
         <dependency>
