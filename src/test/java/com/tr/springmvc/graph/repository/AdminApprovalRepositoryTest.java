@@ -23,7 +23,6 @@ public class AdminApprovalRepositoryTest extends AbstractRepositoryTest {
 
     @Before
     public void setUp() {
-        adminApprovalRepository.deleteAll();
         adminApproval = new AdminApproval();
         adminApproval.setName("AS Approval");
 
