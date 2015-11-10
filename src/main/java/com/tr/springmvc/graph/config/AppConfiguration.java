@@ -8,6 +8,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.data.neo4j.config.Neo4jConfiguration;
 import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
+import org.springframework.data.neo4j.server.InProcessServer;
 import org.springframework.data.neo4j.server.Neo4jServer;
 import org.springframework.data.neo4j.server.RemoteServer;
 
@@ -21,7 +22,8 @@ public class AppConfiguration extends Neo4jConfiguration {
 
     @Override
     public Neo4jServer neo4jServer() {
-        return new RemoteServer(environment.getProperty("neo4j.url"), environment.getProperty("neo4j.user"), environment.getProperty("neo4j.password"));
+//        return new RemoteServer(environment.getProperty("neo4j.url"), environment.getProperty("neo4j.user"), environment.getProperty("neo4j.password"));
+        return new InProcessServer();
     }
 
     @Override
