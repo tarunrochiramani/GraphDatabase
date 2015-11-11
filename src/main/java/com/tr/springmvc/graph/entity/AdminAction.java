@@ -6,7 +6,7 @@ import org.neo4j.ogm.annotation.Property;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
-@RelationshipEntity
+@RelationshipEntity(type="ADMIN_ACTION")
 public class AdminAction {
     @GraphId
     private Long id;
