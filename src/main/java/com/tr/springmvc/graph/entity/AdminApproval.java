@@ -14,7 +14,7 @@ public class AdminApproval {
     @Property(name = "nodeName")
     private String name;
 
-    @Relationship
+    @Relationship(type = "ADMIN_ACTION")
     private AdminAction adminAction;
 
     public Long getId() {
